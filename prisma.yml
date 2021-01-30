@@ -1,5 +1,4 @@
-#endpoint: ${env:ENDPOINT}
-endpoint: https://projet-graphql-49944979a4.herokuapp.com/e-commerce_graphql-/prod
+endpoint: ${env:ENDPOINT}
 datamodel: datamodel.prisma
 generate:
   - generator: javascript-client
