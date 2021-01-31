@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "env-cmd ./prod.env node dist/index.js",
-     "dev": "env-cmd ./dev.env nodemon -e js,graphql src/index.js",
-   "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "babel src --out-dir dist --copy-files",
+    "dev": "env-cmd ./dev.env nodemon -e js,graphql src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DIAKITELassana",
   "license": "ISC",
