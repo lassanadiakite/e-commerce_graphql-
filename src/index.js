@@ -1,4 +1,4 @@
-import '@babel/polyfill'
+require('@babel/polyfill');
 const {GraphQLServer} = require('graphql-yoga');
 const {Prisma} = require('prisma-binding');
 const resolvers = require('./resolvers');
