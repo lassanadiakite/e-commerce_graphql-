@@ -19,7 +19,7 @@ services:
             password: 84917ae5f39d0dc3a665b298c39f8ec332244a5aa455ec35d37058588c21f24a
             ssl: true
             rawAccess: true
-            port: 5432
+            port: '5432'
             migrations: true
 #  postgres:
 #    image: postgres
