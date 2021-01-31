@@ -15,6 +15,7 @@ const server = new GraphQLServer({
         process.env.ENDPOINT,
     }),
   }),
+  introspection:true
 })
 
 const port = process.env.PORT || 4000
