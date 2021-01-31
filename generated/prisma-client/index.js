@@ -40,6 +40,6 @@ var models = [
 exports.Prisma = prisma_lib_1.makePrismaClientClass({
   typeDefs,
   models,
-  endpoint: `https://project-graphql-e458962fef.herokuapp.com/e-commerce_graphql-/prod`
+  endpoint: `${process.env["ENDPOINT"]}`
 });
 exports.prisma = new exports.Prisma();
