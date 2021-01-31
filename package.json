@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "get-schema": "graphql get-schema -p prisma",
-    "start": "env-cmd ./prisma/prod.env node dist/index.js",
+    "start": "env-cmd ./prod.env node dist/index.js",
     "heroku-postbuild": "babel src --out-dir dist --copy-files",
-    "dev": "env-cmd ./prisma/dev.env nodemon -e js,graphql src/index.js"
+    "dev": "env-cmd ./dev.env nodemon -e js,graphql src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DIAKITELassana",
   "license": "ISC",
